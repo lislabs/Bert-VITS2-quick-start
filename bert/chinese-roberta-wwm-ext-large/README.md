@@ -6,6 +6,13 @@ tags:
 license: "apache-2.0"
 ---
 
+How to download the files:
+```
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+sudo apt-get install git-lfs
+git clone https://huggingface.co/hfl/chinese-roberta-wwm-ext-large
+```
+
 # Please use 'Bert' related functions to load this model!
 
 ## Chinese BERT with Whole Word Masking
