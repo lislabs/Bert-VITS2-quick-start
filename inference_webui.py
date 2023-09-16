@@ -113,13 +113,13 @@ if __name__ == "__main__":
         with gr.Row():
             with gr.Column():
                 text = gr.TextArea(label="Text", placeholder="Input Text Here",
-                                      value="生活就像海洋，只有意志坚强的人，才能到达彼岸。")
+                                      value="那是流萤吗，是明灭迷离，天真绮丽的憧憬。那是尘埃吧，是虚无纷飞，终将落地的谎言。")
                 speaker = gr.Dropdown(choices=speakers, value=speakers[0], label='Speaker')
-                sdp_ratio = gr.Slider(minimum=0, maximum=1, value=0.2, step=0.1, label='SDP Ratio')
-                noise_scale = gr.Slider(minimum=0.1, maximum=1.5, value=0.6, step=0.1, label='Noise Scale')
-                noise_scale_w = gr.Slider(minimum=0.1, maximum=1.4, value=0.8, step=0.1, label='Noise Scale W')
-                length_scale = gr.Slider(minimum=0.1, maximum=2, value=1, step=0.1, label='Length Scale')
-                btn = gr.Button("Generate!", variant="primary")
+                sdp_ratio = gr.Slider(minimum=0, maximum=1, value=0.2, step=0.1, label='语调变化')
+                noise_scale = gr.Slider(minimum=0.1, maximum=1.5, value=0.6, step=0.1, label='感情变化')
+                noise_scale_w = gr.Slider(minimum=0.1, maximum=1.4, value=0.8, step=0.1, label='音节发音长度变化')
+                length_scale = gr.Slider(minimum=0.1, maximum=2, value=1, step=0.1, label='语速')
+                btn = gr.Button("开启AI语音之旅吧!", variant="primary")
             with gr.Column():
                 text_output = gr.Textbox(label="Message")
                 audio_output = gr.Audio(label="Output Audio")
@@ -128,5 +128,5 @@ if __name__ == "__main__":
                 inputs=[text, speaker, sdp_ratio, noise_scale, noise_scale_w, length_scale],
                 outputs=[text_output, audio_output])
     
-    webbrowser.open("http://127.0.0.1:7860")
-    app.launch(share=args.share)
+    webbrowser.open("http://127.0.0.1:6006")
+    app.launch(server_port=6006, show_error=True)
