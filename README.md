@@ -1,5 +1,5 @@
 # Bert-VITS2-auto-preprocessing ⚡
-### [简体中文](https://github.com/KevinWang676/Bert-VITS2-auto-preprocessing/blob/master/README_zh)
+### [简体中文](https://github.com/KevinWang676/Bert-VITS2-quick-start/blob/main/README_zh.md)
 
 This project is aimed at combining the features of [VITS-fast-fine-tuning](https://github.com/Plachtaa/VITS-fast-fine-tuning) with the original [Bert-VITS2](https://github.com/fishaudio/Bert-VITS2). Users can slice and label the uploaded audios automatically using the code we provide.
 
