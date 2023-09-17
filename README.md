@@ -9,6 +9,8 @@ cd Bert-VITS2-quick-start
 pip install -r requirements.txt
 ```
 
+HuggingFace demo: [Bert-VITS2](https://kevinwang676-bert-vits2.hf.space) 🤗
+
 ## References
 + [anyvoiceai/MassTTS](https://github.com/anyvoiceai/MassTTS)
 + [jaywalnut310/vits](https://github.com/jaywalnut310/vits)
